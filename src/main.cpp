@@ -50,11 +50,167 @@ void setup() {
 }
 
 void loop() {
-  neopixelWrite(RGB_LED_PIN, 0, 24, 0);       // dim green (r, g, b)
-  Serial.println("blink: on");
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 50);
+  delay(2500);
+
+
+
+  neopixelWrite(RGB_LED_PIN, 0, 50, 0);
+  delay(500);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 50);
+  delay(1500);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(2500);
+
+
+
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 50);
   delay(500);
 
-  neopixelWrite(RGB_LED_PIN, 0, 0, 0);        // off
-  Serial.println("blink: off");
+
+
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 50);
   delay(500);
+
+
+
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 50);
+  delay(500);
+
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+  neopixelWrite(RGB_LED_PIN, 50, 0, 0);
+  delay(100);
+  neopixelWrite(RGB_LED_PIN, 0, 0, 0);
+  delay(50);
+
+
+
+
+
+
 }
