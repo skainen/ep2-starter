@@ -25,7 +25,7 @@ void setup() {
   mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
 
   Serial.println();
-  Serial.println("Tilt up to enable, knob to dim.");
+  Serial.println("Tilt up to enable, knob to dim");
 }
 
 void loop() {
