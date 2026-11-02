@@ -16,6 +16,9 @@
 #include <Wire.h>
 #include <lecture-03_inferencing.h>
 
+const char* ssid     = "Savonia-IoT";
+const char* password = "SuperSecret123";   // "temporary"... ships forever
+
 Adafruit_MPU6050 mpu;
 
 float buffer[EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE];   // the window — allocated once
@@ -41,6 +44,8 @@ void act_on(ei_impulse_result_t &result) {
 void setup() {
   Serial.begin(115200);
   delay(300);
+  Serial.println(ssid);                     // forces the string into flash — and leaks it
+  Serial.println(password);                 // same again, for the one that matters
   Wire.begin(8, 9);
   if (!mpu.begin()) { Serial.println("MPU not found"); while (true) delay(1000); }
   mpu.setAccelerometerRange(MPU6050_RANGE_8_G);
@@ -58,7 +63,17 @@ void loop() {
     numpy::signal_from_buffer(buffer, EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE, &signal);
 
     ei_impulse_result_t result;
-    run_classifier(&signal, &result, false);
+    EI_IMPULSE_ERROR err = run_classifier(&signal, &result, false);
+    if (err != EI_IMPULSE_OK) {
+      Serial.printf("run_classifier failed: %d\n", err);
+      i = 0;
+      return;
+    }
+
+    Serial.printf("DSP: %d ms, NN: %d ms, anomaly: %d ms\n",
+                  result.timing.dsp,
+                  result.timing.classification,
+                  result.timing.anomaly);
     act_on(result);
     i = 0;
   }
