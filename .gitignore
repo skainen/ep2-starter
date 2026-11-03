@@ -16,8 +16,11 @@
 .DS_Store
 Thumbs.db
 
-
+# Local
 lib/*/
-
 strings.txt
 oldmains.cpp
+
+# Regenerable CSV plots and Python caches
+plots/
+__pycache__/
