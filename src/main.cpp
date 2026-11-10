@@ -23,9 +23,10 @@
  */
 #include <Arduino.h>
 #include "test_images.h"
+#include "esp_heap_caps.h"
 
 // 👇 CHANGE THIS to your Edge Impulse project's header:
-#include <your_project_inferencing.h>
+#include <Person_Detection_inferencing.h>
 
 // Pick the test images that match the model's input size.
 #if EI_CLASSIFIER_INPUT_WIDTH == 48
@@ -76,6 +77,9 @@ void classify(const char *name, const uint8_t *image) {
     Serial.printf("  %s %.2f", result.classification[k].label, result.classification[k].value);
   }
   Serial.printf("  | %lu ms (%.1f FPS)\n", ms, 1000.0 / ms);
+  Serial.printf("         dsp %d ms, classification %d ms, other %ld ms\n",
+                result.timing.dsp, result.timing.classification,
+                (long)ms - result.timing.dsp - result.timing.classification);
 }
 
 void setup() {
